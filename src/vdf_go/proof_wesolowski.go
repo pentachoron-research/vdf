@@ -71,7 +71,7 @@ func GenerateVDF(seed []byte, iterations, int_size_bits int) ([]byte, []byte) {
 }
 
 func GenerateVDFWithStopChan(seed []byte, iterations, int_size_bits int, stop <-chan struct{}) ([]byte, []byte) {
-	defer timeTrack(time.Now())
+
 
 	D := CreateDiscriminant(seed, int_size_bits)
 	x := NewClassGroupFromAbDiscriminant(big.NewInt(2), big.NewInt(1), D)
@@ -86,7 +86,7 @@ func GenerateVDFWithStopChan(seed []byte, iterations, int_size_bits int, stop <-
 }
 
 func VerifyVDF(seed, proof_blob []byte, iterations, int_size_bits int) bool {
-	defer timeTrack(time.Now())
+	
 
 	int_size := (int_size_bits + 16) >> 4
 
