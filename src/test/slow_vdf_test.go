@@ -11,7 +11,7 @@ import (
 	"os"
 	"strconv"
 	"testing"
-	"github.com/harmony-one/vdf/src/vdf_go"
+	"github.com/pentachoron-research/vdf/src/vdf_go"
 )
 
 func TestCreateProofCSV(t *testing.T) {
