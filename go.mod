@@ -1,4 +1,4 @@
-module github.com/harmony-one/vdf
+module github.com/pentachoron-research/vdf
 
 go 1.12
 
