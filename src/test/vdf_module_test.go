@@ -8,7 +8,7 @@ import (
 	"log"
 	"testing"
 	"time"
-	"github.com/harmony-one/vdf/src/vdf_go"
+	"github.com/pentachoron-research/vdf/src/vdf_go"
 )
 
 func TestGenerateVDFAndVerify(t *testing.T) {
